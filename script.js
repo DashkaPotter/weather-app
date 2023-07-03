@@ -29,7 +29,7 @@ const fetchData = async () => {
 
     const {
       current: {
-        cloudcover{},
+        cloudcover,
       temperature,
         humidity,
         observation_time: observationTime,
