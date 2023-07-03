@@ -29,13 +29,13 @@ const fetchData = async () => {
 
     const {
       current: {
-        cloudcover,
-        temperature,
-        humidity,
+        cloudcover:cloudcover,
+        temperature:temperature,
+        humidity:humidity,
         observation_time: observationTime,
-        pressure,
+        pressure:pressure,
         uv_index: uvIndex,
-        visibility,
+        visibility:visibility,
         is_day: isDay,
         weather_descriptions: description,
         wind_speed: windSpeed,
