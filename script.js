@@ -42,7 +42,7 @@ const fetchData = async () => {
       },
       location: { name },
     } = data;
-
+console.log(data)
     store = {
       ...store,
       isDay,
