@@ -29,8 +29,8 @@ const fetchData = async () => {
 
     const {
       current: {
-        cloudcover,
-        temperature,
+        cloudcover{},
+      temperature,
         humidity,
         observation_time: observationTime,
         pressure,
@@ -51,11 +51,11 @@ const fetchData = async () => {
       observationTime,
       description: description[0],
       properties: {
-        //cloudcover: {
-          //title: "cloudcover",
-          //value: `${cloudcover} %`,
-          //icon: "cloud(1).png",
-        //},
+        cloudcover: {
+          title: "cloudcover",
+          value: `${cloudcover} %`,
+          icon: "cloud(1).png",
+        },
         humidity: {
           title: "humidity",
           value: `${humidity} %`,
