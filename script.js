@@ -40,8 +40,8 @@ const fetchData = async () => {
         weather_descriptions: description,
         wind_speed: windSpeed,
       },
-      location: { name },
-    } = store;
+      //location: { name },
+    } = data;
 
     store = {
       ...store,
