@@ -6,7 +6,7 @@ const textInput = document.getElementById("text-input");
 const form = document.getElementById("form");
 
 let store = {
-  city: "Minsk",
+  city: "Moscow",
   temperature: 0,
   observationTime: "00:00 AM",
   isDay: "yes",
@@ -29,19 +29,19 @@ const fetchData = async () => {
 
     const {
       current: {
-        cloudcover:cloudcover,
-        temperature:temperature,
-        humidity:humidity,
+        cloudcover,
+        temperature,
+        humidity,
         observation_time: observationTime,
-        pressure:pressure,
+        pressure,
         uv_index: uvIndex,
-        visibility:visibility,
+        visibility,
         is_day: isDay,
         weather_descriptions: description,
         wind_speed: windSpeed,
       },
       location: { name },
-    } = data;
+    } = store;
 
     store = {
       ...store,
