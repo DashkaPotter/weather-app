@@ -40,7 +40,7 @@ const fetchData = async () => {
         weather_descriptions: description,
         wind_speed: windSpeed,
       },
-      //location: { name },
+      location: { name },
     } = data;
 
     store = {
@@ -50,6 +50,7 @@ const fetchData = async () => {
       temperature,
       observationTime,
       description: description[0],
+      cloudcover:cloudcover,
       properties: {
         cloudcover: {
           title: "cloudcover",
